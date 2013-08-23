@@ -1,10 +1,37 @@
 title: Carlos Meza
-name: Carlos Meza
-url: carlos.droots.org
+tagline: I.T. Superstar, Entrepreneur, Philanthropist
+url: http://digitalroots.github.io/website-carlos.meza-digitalRoots/
+
+# Owner/author information
+owner:
+  name: Carlos Meza
+  avatar: 
+  bio: "Describe your self."
+  email: your@email.com
+  # Social networking links are used in author-bio sidebar. Update and remove as you like.
+  twitter:
+  facebook:
+  github:
+  linkedin:
+  instagram:
+  lastfm:
+  tumblr:
+  # For Google Authorship https://plus.google.com/authorship
+  google_plus: 
+
+location:
+  addr:
+  city:
+  state:
+  zip:
+  country:
+  tel:
+  fax:
+
 # Google Analytics - Site ID i.e. UA-XXXXX-X
 google_analytics:
 # Google Webmaster Tools
 google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify: 
+bing_verify:
 pygments: true

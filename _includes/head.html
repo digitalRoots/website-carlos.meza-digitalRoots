@@ -3,19 +3,19 @@
 	<!-- Page Title -->
 	<title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
 	
-	<meta name="keywords" content="onepage, parallax, retina ready, portfolio, responsive, modern html5 template, bootstrap, css3" />
-	<meta name="description" content="Mochito - One-Page Responsive & Retina Ready Portfolio template" />
-	<meta name="author" content="Wisely Themes" />
+	<meta name="keywords" content="{{ page.tags }}" />
+	<meta name="description" content="{{ page.description }}" />
+	<meta name="author" content="{{ site.owner.name }}" />
 	
 	<!-- Mobile Meta Tag -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-	<!-- Fav and touch icons -->
+	<!-- Fav and touch icons 
 	<link rel="shortcut icon" href="img/fav_touch_icons/favicon.jpg" />
 	<link rel="apple-touch-icon" href="img/fav_touch_icons/apple-touch-icon.png" />
 	<link rel="apple-touch-icon" sizes="72x72" href="img/fav_touch_icons/apple-touch-icon-72x72.png" />
 	<link rel="apple-touch-icon" sizes="114x114" href="img/fav_touch_icons/apple-touch-icon-114x114.png" />
-	
+	-->
 	<!-- IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
 	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> 
@@ -37,7 +37,7 @@
 	<!-- Modernizr -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	
-	<!-- LESS CSS Script -->
+	<!-- LESS CSS Script 
 	<script type="text/javascript">
 		less = {
 			env: "production", // or "production"
@@ -50,5 +50,5 @@
 			rootpath: "http://www.wiselythemes.com/mochito/css/"// a path to add on to the start of every url
 																//resource
 		};
-	</script>
+	</script>-->
 	<script src="js/less-1.4.2.min.js"></script>
