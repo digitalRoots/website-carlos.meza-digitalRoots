@@ -1,16 +1,16 @@
 	<meta charset="utf-8" />
-	
+
 	<!-- Page Title -->
 	<title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
-	
+
 	<meta name="keywords" content="{{ page.tags }}" />
 	<meta name="description" content="{{ page.description }}" />
 	<meta name="author" content="{{ site.owner.name }}" />
-	
+
 	<!-- Mobile Meta Tag -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-	<!-- Fav and touch icons 
+	<!-- Fav and touch icons
 	<link rel="shortcut icon" href="img/fav_touch_icons/favicon.jpg" />
 	<link rel="apple-touch-icon" href="img/fav_touch_icons/apple-touch-icon.png" />
 	<link rel="apple-touch-icon" sizes="72x72" href="img/fav_touch_icons/apple-touch-icon-72x72.png" />
@@ -18,25 +18,27 @@
 	-->
 	<!-- IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
-	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> 
+	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	
+
 	<!-- Google Web Font -->
 	<link href='http://fonts.googleapis.com/css?family=Economica|Source+Sans+Pro' rel='stylesheet' type='text/css' />
-	
+
 	<!-- Bootstrap CSS -->
 	<link href="css/bootstrap.css" rel="stylesheet" />
 	<link href="css/bootstrap-responsive.css" rel="stylesheet" />
-	
+
 	<!-- FontAwesome CSS -->
 	<link href="css/font-awesome.css" rel="stylesheet" />
-	
+
+	<link href="css/darktheme.css" rel="stylesheet" type="text/css" id="darktheme" />
+
 	<!-- Custom LESS CSS -->
 	<link rel="stylesheet/less" type="text/css" href="css/style.css" />
-	
+
 	<!-- Modernizr -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
-	
+
 	<!-- LESS CSS Script -->
 	<script type="text/javascript">
 		less = {
@@ -47,8 +49,7 @@
 			relativeUrls: false,// whether to adjust url's to be relative
 								// if false, url's are already relative to the
 								// entry less file
-			rootpath: "{{ site.url }}css/"// a path to add on to the start of every url
-																//resource
+			rootpath: "{{ site.url }}css/"// a path to add on to the start of every url resource
 		};
 	</script>
 	<script src="js/less-1.4.2.min.js"></script>

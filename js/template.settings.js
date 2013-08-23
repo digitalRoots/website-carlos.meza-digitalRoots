@@ -111,7 +111,7 @@ var templateSettings = {
 		$(img).addClass("selected");
 		$("#header, #contacts").css('background-image', 'url(img/patterns/' + pattern + '.png)');
 	},
-	
+	/**
 	setTheme: function(val){
 		"use strict";
 		
@@ -121,7 +121,7 @@ var templateSettings = {
 		else {
 			$('#darktheme').remove();
 		}
-	}
+	}*/
 };
 
 templateSettings.init();
