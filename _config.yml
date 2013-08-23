@@ -1,3 +1,10 @@
 title: Carlos Meza
 name: Carlos Meza
+url: carlos.droots.org
+# Google Analytics - Site ID i.e. UA-XXXXX-X
+google_analytics:
+# Google Webmaster Tools
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify: 
 pygments: true
