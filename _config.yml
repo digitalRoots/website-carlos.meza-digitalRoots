@@ -27,6 +27,8 @@ location:
   country:
   tel:
   fax:
+  latitude:
+  longitude:
 
 # Google Analytics - Site ID i.e. UA-XXXXX-X
 google_analytics:
