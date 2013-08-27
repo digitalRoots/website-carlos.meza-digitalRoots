@@ -3,17 +3,10 @@
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
-<head>
-{% include head.html %}
-</head>
+<head>{% include head.html %}</head>
 <body>
-	<!-- BEGIN HEADER -->
-	<header id="header">
-		<div class="container">
-			<a href="#header" id="logo" class="nav-button"><img src="img/logo.png" alt="" /></a>
-		</div>
-	</header>
-	<!-- END HEADER -->
+
+	<header id="header">{% include header.html %}</header>
 
 	<div id="wrap">
 		<section class="nav-section">
@@ -21,15 +14,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="span12">
-						<nav id="nav"><!-- Begin Main Menu -->
-							<ul>
-								<li><a href="#header" class="icon" data-id="Home"><i class="icon-home"></i></a></li>
-								<li><a href="#portfolio">Portfolio</a></li>
-								<li><a href="#services">Our Services</a></li>
-								<li><a href="#about">About Us</a></li>
-								<li><a href="#contacts">Contacts</a></li>
-							</ul>
-						</nav><!-- End Main Menu -->
+						<nav id="nav">{% include navigation.html %}</nav>
 					</div>
 				</div>
 			</div>
@@ -38,646 +23,9 @@
 		<section id="portfolio">
 			<div class="container">
 				<div class="row">
-					<div class="span12">
-						<h1 class="section-title span6">Portfolio</h1>
-						<p class="section-desc span6 center">Pellentesque elementum libero enim, eget gravida nunc laoreet et. Nullam ac enim auctor, fringilla risus at, imperdiet turpis. Mauris ut tristique odio. Aenean diam ipsum, ultricies sed consequat sed, faucibus et tellus. Nam ut sollicitudin lacus. Nulla id imperdiet purus, id tristique erat.</p>
-						
-						<div id="portfolio-grid">
-							<ol id="filters">
-								<li data-filter="" class="active">Show All</li>
-								<li data-filter="design">Design</li>
-								<li data-filter="development">Development</li>
-								<li data-filter="dd">Design + Development</li>
-								<li data-filter="3d">3D</li>
-							</ol>
-
-							<ul id="folio-items">
-								<li data-filter-class='["design"]'
-									data-overview='[{
-										"headerBg":"img/portfolio/mochito_bg_portfolio_header.jpg",
-										"logo":"img/portfolio/projecto_logo.png",
-										"description":"Pellentesque elementum libero enim, eget gravida nunc laoreet et. Nullam ac enim auctor, fringilla risus at, imperdiet turpis. Mauris ut tristique odio. Aenean diam ipsum, ultricies sed consequat sed, faucibus et tellus. Nam ut sollicitudin lacus. Nulla id imperdiet purus, id tristique erat.",
-										"url":"www.wiselythemes.com/mochito",
-										"imgs":[
-											{
-												"title":"Mochito Template",
-												"img":"img/portfolio/mochito1.png"
-											},
-											{
-												"title":"Website Preview",
-												"img":"img/portfolio/mochito2.png"
-											},
-											{
-												"title":"Responsive Design",
-												"description":"Lorem ipsum dolor sit amet",
-												"img":"img/portfolio/mochito3.png"
-											}]
-										}]'>
-									<img src="img/portfolio/image_1.jpg" alt="" />
-									<div>
-										<span class="tags"><a href="#">#WiselyThemes</a>, <a href="#">#Template</a>, <a href="#">#Responsive</a></span>
-										<div class="info">
-											<h2>Mochito</h2>
-											<h5>Responsive One-Page Porfolio</h5>
-											<a href="#" class="btn btn-small btn-folio">Ver mais ></a>
-										</div>
-									</div>
-								</li>
-								<li data-filter-class='["development"]'
-									data-overview='[{
-										"headerBg":"img/portfolio/mochito_bg_portfolio_header.jpg",
-										"logo":"img/portfolio/projecto_logo.png",
-										"description":"Pellentesque elementum libero enim, eget gravida nunc laoreet et. Nullam ac enim auctor, fringilla risus at, imperdiet turpis. Mauris ut tristique odio. Aenean diam ipsum, ultricies sed consequat sed, faucibus et tellus. Nam ut sollicitudin lacus. Nulla id imperdiet purus, id tristique erat.",
-										"url":"www.wiselythemes.com/mochito",
-										"imgs":[
-											{
-												"title":"Mochito Template",
-												"img":"img/portfolio/mochito1.png"
-											},
-											{
-												"title":"Website Preview",
-												"img":"img/portfolio/mochito2.png"
-											},
-											{
-												"title":"Responsive Design",
-												"description":"Lorem ipsum dolor sit amet",
-												"img":"img/portfolio/mochito3.png"
-											}]
-										}]'>
-									<img src="img/portfolio/image_2.jpg" alt="" />
-									<div>
-										<span class="tags"><a href="#">#WiselyThemes</a>, <a href="#">#Template</a>, <a href="#">#Responsive</a></span>
-										<div class="info">
-											<h2>Mochito</h2>
-											<h5>Lorem ipsum dolor sit amet</h5>
-											<a href="#" class="btn btn-small btn-folio">Ver mais ></a>
-										</div>
-									</div>
-								</li>
-								<li data-filter-class='["dd"]'
-									data-overview='[{
-										"headerBg":"img/portfolio/mochito_bg_portfolio_header.jpg",
-										"logo":"img/portfolio/projecto_logo.png",
-										"description":"Pellentesque elementum libero enim, eget gravida nunc laoreet et. Nullam ac enim auctor, fringilla risus at, imperdiet turpis. Mauris ut tristique odio. Aenean diam ipsum, ultricies sed consequat sed, faucibus et tellus. Nam ut sollicitudin lacus. Nulla id imperdiet purus, id tristique erat.",
-										"url":"www.wiselythemes.com/mochito",
-										"imgs":[
-											{
-												"title":"Mochito Template",
-												"img":"img/portfolio/mochito1.png"
-											},
-											{
-												"title":"Website Preview",
-												"img":"img/portfolio/mochito2.png"
-											},
-											{
-												"title":"Responsive Design",
-												"description":"Lorem ipsum dolor sit amet",
-												"img":"img/portfolio/mochito3.png"
-											}]
-										}]'>
-									<img src="img/portfolio/image_3.jpg" alt="" />
-									<div>
-										<span class="tags"><a href="#">#WiselyThemes</a>, <a href="#">#Template</a>, <a href="#">#Responsive</a></span>
-										<div class="info">
-											<h2>Mochito</h2>
-											<h5>Lorem ipsum dolor sit amet</h5>
-											<a href="#" class="btn btn-small btn-folio">Ver mais ></a>
-										</div>
-									</div>
-								</li>
-								<li data-filter-class='["design"]'
-									data-overview='[{
-										"headerBg":"img/portfolio/mochito_bg_portfolio_header.jpg",
-										"logo":"img/portfolio/projecto_logo.png",
-										"description":"Pellentesque elementum libero enim, eget gravida nunc laoreet et. Nullam ac enim auctor, fringilla risus at, imperdiet turpis. Mauris ut tristique odio. Aenean diam ipsum, ultricies sed consequat sed, faucibus et tellus. Nam ut sollicitudin lacus. Nulla id imperdiet purus, id tristique erat.",
-										"url":"www.wiselythemes.com/mochito",
-										"imgs":[
-											{
-												"title":"Mochito Template",
-												"img":"img/portfolio/mochito1.png"
-											},
-											{
-												"title":"Website Preview",
-												"img":"img/portfolio/mochito2.png"
-											},
-											{
-												"title":"Responsive Design",
-												"description":"Lorem ipsum dolor sit amet",
-												"img":"img/portfolio/mochito3.png"
-											}]
-										}]'>
-									<img src="img/portfolio/image_4.jpg" alt="" />
-									<div>
-										<span class="tags"><a href="#">#WiselyThemes</a>, <a href="#">#Template</a>, <a href="#">#Responsive</a></span>
-										<div class="info">
-											<h2>Mochito</h2>
-											<h5>Lorem ipsum dolor sit amet</h5>
-											<a href="#" class="btn btn-small btn-folio">Ver mais ></a>
-										</div>
-									</div>
-								</li>
-								<li data-filter-class='["development"]'
-									data-overview='[{
-										"headerBg":"img/portfolio/mochito_bg_portfolio_header.jpg",
-										"logo":"img/portfolio/projecto_logo.png",
-										"description":"Pellentesque elementum libero enim, eget gravida nunc laoreet et. Nullam ac enim auctor, fringilla risus at, imperdiet turpis. Mauris ut tristique odio. Aenean diam ipsum, ultricies sed consequat sed, faucibus et tellus. Nam ut sollicitudin lacus. Nulla id imperdiet purus, id tristique erat.",
-										"url":"www.wiselythemes.com/mochito",
-										"imgs":[
-											{
-												"title":"Mochito Template",
-												"img":"img/portfolio/mochito1.png"
-											},
-											{
-												"title":"Website Preview",
-												"img":"img/portfolio/mochito2.png"
-											},
-											{
-												"title":"Responsive Design",
-												"description":"Lorem ipsum dolor sit amet",
-												"img":"img/portfolio/mochito3.png"
-											}]
-										}]'>
-									<img src="img/portfolio/image_5.jpg" alt="" />
-									<div>
-										<span class="tags"><a href="#">#WiselyThemes</a>, <a href="#">#Template</a>, <a href="#">#Responsive</a></span>
-										<div class="info">
-											<h2>Mochito</h2>
-											<h5>Lorem ipsum dolor sit amet</h5>
-											<a href="#" class="btn btn-small btn-folio">Ver mais ></a>
-										</div>
-									</div>
-								</li>
-								<li data-filter-class='["dd"]'
-									data-overview='[{
-										"headerBg":"img/portfolio/mochito_bg_portfolio_header.jpg",
-										"logo":"img/portfolio/projecto_logo.png",
-										"description":"Pellentesque elementum libero enim, eget gravida nunc laoreet et. Nullam ac enim auctor, fringilla risus at, imperdiet turpis. Mauris ut tristique odio. Aenean diam ipsum, ultricies sed consequat sed, faucibus et tellus. Nam ut sollicitudin lacus. Nulla id imperdiet purus, id tristique erat.",
-										"url":"www.wiselythemes.com/mochito",
-										"imgs":[
-											{
-												"title":"Mochito Template",
-												"img":"img/portfolio/mochito1.png"
-											},
-											{
-												"title":"Website Preview",
-												"img":"img/portfolio/mochito2.png"
-											},
-											{
-												"title":"Responsive Design",
-												"description":"Lorem ipsum dolor sit amet",
-												"img":"img/portfolio/mochito3.png"
-											}]
-										}]'>
-								  <img src="img/portfolio/image_6.jpg" alt="" />
-								  <div>
-										<span class="tags"><a href="#">#WiselyThemes</a>, <a href="#">#Template</a>, <a href="#">#Responsive</a></span>
-										<div class="info">
-											<h2>Mochito</h2>
-											<h5>Lorem ipsum dolor sit amet</h5>
-											<a href="#" class="btn btn-small btn-folio">Ver mais ></a>
-										</div>
-									</div>
-								</li>
-								<li data-filter-class='["design"]'
-									data-overview='[{
-										"headerBg":"img/portfolio/mochito_bg_portfolio_header.jpg",
-										"logo":"img/portfolio/projecto_logo.png",
-										"description":"Pellentesque elementum libero enim, eget gravida nunc laoreet et. Nullam ac enim auctor, fringilla risus at, imperdiet turpis. Mauris ut tristique odio. Aenean diam ipsum, ultricies sed consequat sed, faucibus et tellus. Nam ut sollicitudin lacus. Nulla id imperdiet purus, id tristique erat.",
-										"url":"www.wiselythemes.com/mochito",
-										"imgs":[
-											{
-												"title":"Mochito Template",
-												"img":"img/portfolio/mochito1.png"
-											},
-											{
-												"title":"Website Preview",
-												"img":"img/portfolio/mochito2.png"
-											},
-											{
-												"title":"Responsive Design",
-												"description":"Lorem ipsum dolor sit amet",
-												"img":"img/portfolio/mochito3.png"
-											}]
-										}]'>
-									<img src="img/portfolio/image_7.jpg" alt="" />
-									<div>
-										<span class="tags"><a href="#">#WiselyThemes</a>, <a href="#">#Template</a>, <a href="#">#Responsive</a></span>
-										<div class="info">
-											<h2>Mochito</h2>
-											<h5>Lorem ipsum dolor sit amet</h5>
-											<a href="#" class="btn btn-small btn-folio">Ver mais ></a>
-										</div>
-									</div>
-								</li>
-								<li data-filter-class='["development"]'
-									data-overview='[{
-										"headerBg":"img/portfolio/mochito_bg_portfolio_header.jpg",
-										"logo":"img/portfolio/projecto_logo.png",
-										"description":"Pellentesque elementum libero enim, eget gravida nunc laoreet et. Nullam ac enim auctor, fringilla risus at, imperdiet turpis. Mauris ut tristique odio. Aenean diam ipsum, ultricies sed consequat sed, faucibus et tellus. Nam ut sollicitudin lacus. Nulla id imperdiet purus, id tristique erat.",
-										"url":"www.wiselythemes.com/mochito",
-										"imgs":[
-											{
-												"title":"Mochito Template",
-												"img":"img/portfolio/mochito1.png"
-											},
-											{
-												"title":"Website Preview",
-												"img":"img/portfolio/mochito2.png"
-											},
-											{
-												"title":"Responsive Design",
-												"description":"Lorem ipsum dolor sit amet",
-												"img":"img/portfolio/mochito3.png"
-											}]
-										}]'>
-									<img src="img/portfolio/image_8.jpg" alt="" />
-									<div>
-										<span class="tags"><a href="#">#WiselyThemes</a>, <a href="#">#Template</a>, <a href="#">#Responsive</a></span>
-										<div class="info">
-											<h2>Mochito</h2>
-											<h5>Lorem ipsum dolor sit amet</h5>
-											<a href="#" class="btn btn-small btn-folio">Ver mais ></a>
-										</div>
-									</div>
-								</li>
-								<li data-filter-class='["dd"]'
-									data-overview='[{
-										"headerBg":"img/portfolio/mochito_bg_portfolio_header.jpg",
-										"logo":"img/portfolio/projecto_logo.png",
-										"description":"Pellentesque elementum libero enim, eget gravida nunc laoreet et. Nullam ac enim auctor, fringilla risus at, imperdiet turpis. Mauris ut tristique odio. Aenean diam ipsum, ultricies sed consequat sed, faucibus et tellus. Nam ut sollicitudin lacus. Nulla id imperdiet purus, id tristique erat.",
-										"url":"www.wiselythemes.com/mochito",
-										"imgs":[
-											{
-												"title":"Mochito Template",
-												"img":"img/portfolio/mochito1.png"
-											},
-											{
-												"title":"Website Preview",
-												"img":"img/portfolio/mochito2.png"
-											},
-											{
-												"title":"Responsive Design",
-												"description":"Lorem ipsum dolor sit amet",
-												"img":"img/portfolio/mochito3.png"
-											}]
-										}]'>
-									<img src="img/portfolio/image_9.jpg" alt="" />
-									<div>
-										<span class="tags"><a href="#">#WiselyThemes</a>, <a href="#">#Template</a>, <a href="#">#Responsive</a></span>
-										<div class="info">
-											<h2>Mochito</h2>
-											<h5>Lorem ipsum dolor sit amet</h5>
-											<a href="#" class="btn btn-small btn-folio">Ver mais ></a>
-										</div>
-									</div>
-								</li>
-								<li data-filter-class='["design"]'
-									data-overview='[{
-										"headerBg":"img/portfolio/mochito_bg_portfolio_header.jpg",
-										"logo":"img/portfolio/projecto_logo.png",
-										"description":"Pellentesque elementum libero enim, eget gravida nunc laoreet et. Nullam ac enim auctor, fringilla risus at, imperdiet turpis. Mauris ut tristique odio. Aenean diam ipsum, ultricies sed consequat sed, faucibus et tellus. Nam ut sollicitudin lacus. Nulla id imperdiet purus, id tristique erat.",
-										"url":"www.wiselythemes.com/mochito",
-										"imgs":[
-											{
-												"title":"Mochito Template",
-												"img":"img/portfolio/mochito1.png"
-											},
-											{
-												"title":"Website Preview",
-												"img":"img/portfolio/mochito2.png"
-											},
-											{
-												"title":"Responsive Design",
-												"description":"Lorem ipsum dolor sit amet",
-												"img":"img/portfolio/mochito3.png"
-											}]
-										}]'>
-									<img src="img/portfolio/image_10.jpg" alt="" />
-									<div>
-										<span class="tags"><a href="#">#WiselyThemes</a>, <a href="#">#Template</a>, <a href="#">#Responsive</a></span>
-										<div class="info">
-											<h2>Mochito</h2>
-											<h5>Lorem ipsum dolor sit amet</h5>
-											<a href="#" class="btn btn-small btn-folio">Ver mais ></a>
-										</div>
-									</div>
-								</li>
-								<li data-filter-class='["development"]'
-									data-overview='[{
-										"headerBg":"img/portfolio/mochito_bg_portfolio_header.jpg",
-										"logo":"img/portfolio/projecto_logo.png",
-										"description":"Pellentesque elementum libero enim, eget gravida nunc laoreet et. Nullam ac enim auctor, fringilla risus at, imperdiet turpis. Mauris ut tristique odio. Aenean diam ipsum, ultricies sed consequat sed, faucibus et tellus. Nam ut sollicitudin lacus. Nulla id imperdiet purus, id tristique erat.",
-										"url":"www.wiselythemes.com/mochito",
-										"imgs":[
-											{
-												"title":"Mochito Template",
-												"img":"img/portfolio/mochito1.png"
-											},
-											{
-												"title":"Website Preview",
-												"img":"img/portfolio/mochito2.png"
-											},
-											{
-												"title":"Responsive Design",
-												"description":"Lorem ipsum dolor sit amet",
-												"img":"img/portfolio/mochito3.png"
-											}]
-										}]'>
-									<img src="img/portfolio/image_1.jpg" alt="" />
-									<div>
-										<span class="tags"><a href="#">#WiselyThemes</a>, <a href="#">#Template</a>, <a href="#">#Responsive</a></span>
-										<div class="info">
-											<h2>Mochito</h2>
-											<h5>Lorem ipsum dolor sit amet</h5>
-											<a href="#" class="btn btn-small btn-folio">Ver mais ></a>
-										</div>
-									</div>
-								</li>
-								<li data-filter-class='["dd"]'
-									data-overview='[{
-										"headerBg":"img/portfolio/mochito_bg_portfolio_header.jpg",
-										"logo":"img/portfolio/projecto_logo.png",
-										"description":"Pellentesque elementum libero enim, eget gravida nunc laoreet et. Nullam ac enim auctor, fringilla risus at, imperdiet turpis. Mauris ut tristique odio. Aenean diam ipsum, ultricies sed consequat sed, faucibus et tellus. Nam ut sollicitudin lacus. Nulla id imperdiet purus, id tristique erat.",
-										"url":"www.wiselythemes.com/mochito",
-										"imgs":[
-											{
-												"title":"Mochito Template",
-												"img":"img/portfolio/mochito1.png"
-											},
-											{
-												"title":"Website Preview",
-												"img":"img/portfolio/mochito2.png"
-											},
-											{
-												"title":"Responsive Design",
-												"description":"Lorem ipsum dolor sit amet",
-												"img":"img/portfolio/mochito3.png"
-											}]
-										}]'>
-									<img src="img/portfolio/image_2.jpg" alt="" />
-									<div>
-										<span class="tags"><a href="#">#WiselyThemes</a>, <a href="#">#Template</a>, <a href="#">#Responsive</a></span>
-										<div class="info">
-											<h2>Mochito</h2>
-											<h5>Lorem ipsum dolor sit amet</h5>
-											<a href="#" class="btn btn-small btn-folio">Ver mais ></a>
-										</div>
-									</div>
-								</li>
-								<li data-filter-class='["3d"]'
-									data-overview='[{
-										"headerBg":"img/portfolio/mochito_bg_portfolio_header.jpg",
-										"logo":"img/portfolio/projecto_logo.png",
-										"description":"Pellentesque elementum libero enim, eget gravida nunc laoreet et. Nullam ac enim auctor, fringilla risus at, imperdiet turpis. Mauris ut tristique odio. Aenean diam ipsum, ultricies sed consequat sed, faucibus et tellus. Nam ut sollicitudin lacus. Nulla id imperdiet purus, id tristique erat.",
-										"url":"www.wiselythemes.com/mochito",
-										"imgs":[
-											{
-												"title":"Mochito Template",
-												"img":"img/portfolio/mochito1.png"
-											},
-											{
-												"title":"Website Preview",
-												"img":"img/portfolio/mochito2.png"
-											},
-											{
-												"title":"Responsive Design",
-												"description":"Lorem ipsum dolor sit amet",
-												"img":"img/portfolio/mochito3.png"
-											}]
-										}]'>
-									<img src="img/portfolio/image_3.jpg" alt="" />
-									<div>
-										<span class="tags"><a href="#">#WiselyThemes</a>, <a href="#">#Template</a>, <a href="#">#Responsive</a></span>
-										<div class="info">
-											<h2>Mochito</h2>
-											<h5>Lorem ipsum dolor sit amet</h5>
-											<a href="#" class="btn btn-small btn-folio">Ver mais ></a>
-										</div>
-									</div>
-								</li>
-								
-								
-								<li data-filter-class='["design"]' class="disable"
-									data-overview='[{
-										"headerBg":"img/portfolio/mochito_bg_portfolio_header.jpg",
-										"logo":"img/portfolio/projecto_logo.png",
-										"description":"Pellentesque elementum libero enim, eget gravida nunc laoreet et. Nullam ac enim auctor, fringilla risus at, imperdiet turpis. Mauris ut tristique odio. Aenean diam ipsum, ultricies sed consequat sed, faucibus et tellus. Nam ut sollicitudin lacus. Nulla id imperdiet purus, id tristique erat.",
-										"url":"www.wiselythemes.com/mochito",
-										"imgs":[
-											{
-												"title":"Mochito Template",
-												"img":"img/portfolio/mochito1.png"
-											},
-											{
-												"title":"Website Preview",
-												"img":"img/portfolio/mochito2.png"
-											},
-											{
-												"title":"Responsive Design",
-												"description":"Lorem ipsum dolor sit amet",
-												"img":"img/portfolio/mochito3.png"
-											}]
-										}]'>
-									<img src="img/portfolio/image_4.jpg" alt="" />
-									<div>
-										<span class="tags"><a href="#">#Wisely</a>, <a href="#">#Template</a>, <a href="#">#Responsive</a></span>
-										<div class="info">
-											<h2>Mochito</h2>
-											<h5>Lorem ipsum dolor sit amet</h5>
-											<a href="#" class="btn btn-small btn-folio">Ver mais ></a>
-										</div>
-									</div>
-								</li>
-								<li data-filter-class='["development"]' class="disable"
-									data-overview='[{
-										"headerBg":"img/portfolio/mochito_bg_portfolio_header.jpg",
-										"logo":"img/portfolio/projecto_logo.png",
-										"description":"Pellentesque elementum libero enim, eget gravida nunc laoreet et. Nullam ac enim auctor, fringilla risus at, imperdiet turpis. Mauris ut tristique odio. Aenean diam ipsum, ultricies sed consequat sed, faucibus et tellus. Nam ut sollicitudin lacus. Nulla id imperdiet purus, id tristique erat.",
-										"url":"www.wiselythemes.com/mochito",
-										"imgs":[
-											{
-												"title":"Mochito Template",
-												"img":"img/portfolio/mochito1.png"
-											},
-											{
-												"title":"Website Preview",
-												"img":"img/portfolio/mochito2.png"
-											},
-											{
-												"title":"Responsive Design",
-												"description":"Lorem ipsum dolor sit amet",
-												"img":"img/portfolio/mochito3.png"
-											}]
-										}]'>
-									<img src="img/portfolio/image_5.jpg" alt="" />
-									<div>
-										<span class="tags"><a href="#">#Wisely</a>, <a href="#">#Template</a>, <a href="#">#Responsive</a></span>
-										<div class="info">
-											<h2>Mochito</h2>
-											<h5>Lorem ipsum dolor sit amet</h5>
-											<a href="#" class="btn btn-small btn-folio">Ver mais ></a>
-										</div>
-									</div>
-								</li>
-								<li data-filter-class='["dd"]' class="disable"
-									data-overview='[{
-										"headerBg":"img/portfolio/mochito_bg_portfolio_header.jpg",
-										"logo":"img/portfolio/projecto_logo.png",
-										"description":"Pellentesque elementum libero enim, eget gravida nunc laoreet et. Nullam ac enim auctor, fringilla risus at, imperdiet turpis. Mauris ut tristique odio. Aenean diam ipsum, ultricies sed consequat sed, faucibus et tellus. Nam ut sollicitudin lacus. Nulla id imperdiet purus, id tristique erat.",
-										"url":"www.wiselythemes.com/mochito",
-										"imgs":[
-											{
-												"title":"Mochito Template",
-												"img":"img/portfolio/mochito1.png"
-											},
-											{
-												"title":"Website Preview",
-												"img":"img/portfolio/mochito2.png"
-											},
-											{
-												"title":"Responsive Design",
-												"description":"Lorem ipsum dolor sit amet",
-												"img":"img/portfolio/mochito3.png"
-											}]
-										}]'>
-									<img src="img/portfolio/image_6.jpg" alt="" />
-									<div>
-										<span class="tags"><a href="#">#Wisely</a>, <a href="#">#Template</a>, <a href="#">#Responsive</a></span>
-										<div class="info">
-											<h2>Mochito</h2>
-											<h5>Lorem ipsum dolor sit amet</h5>
-											<a href="#" class="btn btn-small btn-folio">Ver mais ></a>
-										</div>
-									</div>
-								</li>
-								<li data-filter-class='["design"]' class="disable"
-									data-overview='[{
-										"headerBg":"img/portfolio/mochito_bg_portfolio_header.jpg",
-										"logo":"img/portfolio/projecto_logo.png",
-										"description":"Pellentesque elementum libero enim, eget gravida nunc laoreet et. Nullam ac enim auctor, fringilla risus at, imperdiet turpis. Mauris ut tristique odio. Aenean diam ipsum, ultricies sed consequat sed, faucibus et tellus. Nam ut sollicitudin lacus. Nulla id imperdiet purus, id tristique erat.",
-										"url":"www.wiselythemes.com/mochito",
-										"imgs":[
-											{
-												"title":"Mochito Template",
-												"img":"img/portfolio/mochito1.png"
-											},
-											{
-												"title":"Website Preview",
-												"img":"img/portfolio/mochito2.png"
-											},
-											{
-												"title":"Responsive Design",
-												"description":"Lorem ipsum dolor sit amet",
-												"img":"img/portfolio/mochito3.png"
-											}]
-										}]'>
-									<img src="img/portfolio/image_7.jpg" alt="" />
-									<div>
-										<span class="tags"><a href="#">#Wisely</a>, <a href="#">#Template</a>, <a href="#">#Responsive</a></span>
-										<div class="info">
-											<h2>Mochito</h2>
-											<h5>Lorem ipsum dolor sit amet</h5>
-											<a href="#" class="btn btn-small btn-folio">Ver mais ></a>
-										</div>
-									</div>
-								</li>
-								<li data-filter-class='["development"]' class="disable"
-									data-overview='[{
-										"headerBg":"img/portfolio/mochito_bg_portfolio_header.jpg",
-										"logo":"img/portfolio/projecto_logo.png",
-										"description":"Pellentesque elementum libero enim, eget gravida nunc laoreet et. Nullam ac enim auctor, fringilla risus at, imperdiet turpis. Mauris ut tristique odio. Aenean diam ipsum, ultricies sed consequat sed, faucibus et tellus. Nam ut sollicitudin lacus. Nulla id imperdiet purus, id tristique erat.",
-										"url":"www.wiselythemes.com/mochito",
-										"imgs":[
-											{
-												"title":"Mochito Template",
-												"img":"img/portfolio/mochito1.png"
-											},
-											{
-												"title":"Website Preview",
-												"img":"img/portfolio/mochito2.png"
-											},
-											{
-												"title":"Responsive Design",
-												"description":"Lorem ipsum dolor sit amet",
-												"img":"img/portfolio/mochito3.png"
-											}]
-										}]'>
-									<img src="img/portfolio/image_8.jpg" alt="" />
-									<div>
-										<span class="tags"><a href="#">#Wisely</a>, <a href="#">#Template</a>, <a href="#">#Responsive</a></span>
-										<div class="info">
-											<h2>Mochito</h2>
-											<h5>Lorem ipsum dolor sit amet</h5>
-											<a href="#" class="btn btn-small btn-folio">Ver mais ></a>
-										</div>
-									</div>
-								</li>
-								<li data-filter-class='["dd"]' class="disable"
-									data-overview='[{
-										"headerBg":"img/portfolio/mochito_bg_portfolio_header.jpg",
-										"logo":"img/portfolio/projecto_logo.png",
-										"description":"Pellentesque elementum libero enim, eget gravida nunc laoreet et. Nullam ac enim auctor, fringilla risus at, imperdiet turpis. Mauris ut tristique odio. Aenean diam ipsum, ultricies sed consequat sed, faucibus et tellus. Nam ut sollicitudin lacus. Nulla id imperdiet purus, id tristique erat.",
-										"url":"www.wiselythemes.com/mochito",
-										"imgs":[
-											{
-												"title":"Mochito Template",
-												"img":"img/portfolio/mochito1.png"
-											},
-											{
-												"title":"Website Preview",
-												"img":"img/portfolio/mochito2.png"
-											},
-											{
-												"title":"Responsive Design",
-												"description":"Lorem ipsum dolor sit amet",
-												"img":"img/portfolio/mochito3.png"
-											}]
-										}]'>
-									<img src="img/portfolio/image_9.jpg" alt="" />
-									<div>
-										<span class="tags"><a href="#">#Wisely</a>, <a href="#">#Template</a>, <a href="#">#Responsive</a></span>
-										<div class="info">
-											<h2>Mochito</h2>
-											<h5>Lorem ipsum dolor sit amet</h5>
-											<a href="#" class="btn btn-small btn-folio">Ver mais ></a>
-										</div>
-									</div>
-								</li>
-								<li data-filter-class='["3d"]' class="disable"
-									data-overview='[{
-										"headerBg":"img/portfolio/mochito_bg_portfolio_header.jpg",
-										"logo":"img/portfolio/projecto_logo.png",
-										"description":"Pellentesque elementum libero enim, eget gravida nunc laoreet et. Nullam ac enim auctor, fringilla risus at, imperdiet turpis. Mauris ut tristique odio. Aenean diam ipsum, ultricies sed consequat sed, faucibus et tellus. Nam ut sollicitudin lacus. Nulla id imperdiet purus, id tristique erat.",
-										"url":"www.wiselythemes.com/mochito",
-										"imgs":[
-											{
-												"title":"Mochito Template",
-												"img":"img/portfolio/mochito1.png"
-											},
-											{
-												"title":"Website Preview",
-												"img":"img/portfolio/mochito2.png"
-											},
-											{
-												"title":"Responsive Design",
-												"description":"Lorem ipsum dolor sit amet",
-												"img":"img/portfolio/mochito3.png"
-											}]
-										}]'>
-									<img src="img/portfolio/image_10.jpg" alt="" />
-									<div>
-										<span class="tags"><a href="#">#Wisely</a>, <a href="#">#Template</a>, <a href="#">#Responsive</a></span>
-										<div class="info">
-											<h2>Mochito</h2>
-											<h5>Lorem ipsum dolor sit amet</h5>
-											<a href="#" class="btn btn-small btn-folio">Ver mais ></a>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-					
+					<h1 class="section-title span6">Portfolio</h1>
+					<p class="section-desc span6 center">Pellentesque elementum libero enim, eget gravida nunc laoreet et. Nullam ac enim auctor, fringilla risus at, imperdiet turpis. Mauris ut tristique odio. Aenean diam ipsum, ultricies sed consequat sed, faucibus et tellus. Nam ut sollicitudin lacus. Nulla id imperdiet purus, id tristique erat.</p>
+					<div class="span12">{% include portfolio.html %}</div>
 					<div class="span12 center"><a href="#" id="load-works" class="btn btn-large">Load More Works...</a></div>
 				</div>
 			</div>
@@ -696,29 +44,7 @@
 			<div id="services-container">
 				<div class="container">
 					<div class="row">
-						<div class="span12">
-							<div class="services-item ">
-								<i class="icon-desktop"></i>
-								<h3>Web Design <span>& </span>Development</h3>
-								<p>Pellentesque elementum libero enim, eget gravida nunc laoreet et. Nullam ac enim auctor, fringilla risus at, imperdiet turpis. Mauris ut tristique odio. Aenean diam ipsum, ultricies sed consequat sed, faucibus et tellus. Nam ut sollicitudin lacus. Nulla id imperdiet purus, id tristique erat.</p>
-							</div>
-							<div class="services-item">	
-								<i class="icon-thumbs-up-alt"></i>
-								<h3>Apps, Contests <span>& </span>Sweepstakes</h3>
-								<p>Pellentesque elementum libero enim, eget gravida nunc laoreet et. Nullam ac enim auctor, fringilla risus at, imperdiet turpis. Mauris ut tristique odio. Aenean diam ipsum, ultricies sed consequat sed, faucibus et tellus. Nam ut sollicitudin lacus. Nulla id imperdiet purus, id tristique erat.</p>
-							</div>
-							<div class="services-item">
-								<i class="icon-mobile-phone"></i>
-								<h3>Mobile Apps <span>& </span>Contents</h3>
-								<p>Pellentesque elementum libero enim, eget gravida nunc laoreet et. Nullam ac enim auctor, fringilla risus at, imperdiet turpis. Mauris ut tristique odio. Aenean diam ipsum, ultricies sed consequat sed, faucibus et tellus. Nam ut sollicitudin lacus. Nulla id imperdiet purus, id tristique erat.</p>
-							</div>
-							<div class="services-item">
-								<i class="icon-picture"></i>
-								<h3>Social Media <span>& </span>Web Content</h3>
-								<p>Pellentesque elementum libero enim, eget gravida nunc laoreet et. Nullam ac enim auctor, fringilla risus at, imperdiet turpis. Mauris ut tristique odio. Aenean diam ipsum, ultricies sed consequat sed, faucibus et tellus. Nam ut sollicitudin lacus. Nulla id imperdiet purus, id tristique erat.</p>
-							</div>
-						</div>
-						
+						<div class="span12">{% include services.html %}</div>
 						<div class="span12 center"><a href="#contacts" id="workwithus" class="btn btn-large full-color">Want to work with us?</a></div>
 					</div>
 				</div>
@@ -755,7 +81,7 @@
 					</div>
 					<div class="span4" id="skills">
 						<h4>Our Skills</h4>
-						
+
 						<div class="progress" data-percentage="92"><span>HTML5 / CSS3</span><div class="bar"></div></div>
 						<div class="progress" data-percentage="75"><span>PHP</span><div class="bar"></div></div>
 						<div class="progress" data-percentage="84"><span>JavaScript</span><div class="bar"></div></div>
@@ -763,7 +89,7 @@
 						<div class="progress" data-percentage="91"><span>Photoshop</span><div class="bar"></div></div>
 						<div class="progress" data-percentage="72"><span>Illustrator</span><div class="bar"></div></div>
 						<div class="progress" data-percentage="64"><span>Flash</span><div class="bar"></div></div>
-						
+
 						<i class="icon-cogs"></i>
 						<h3 class="center">And we are getting<br/> better every day...</h3>
 					</div>
@@ -777,12 +103,12 @@
 					<div class="span12">
 						<h1 class="section-title span6">Contact us</h1>
 						<p class="section-desc span6 center">Pellentesque elementum libero enim, eget gravida nunc laoreet et. Nullam ac enim auctor, fringilla risus at, imperdiet turpis. Mauris ut tristique odio. Aenean diam ipsum, ultricies sed consequat sed, faucibus et tellus. Nam ut sollicitudin lacus. Nulla id imperdiet purus, id tristique erat.</p>
-						
+
 						<ul id="form-opt">
 							<li data-id="0" class="active">General Contact</li>
 							<li data-id="1" >Request proposal</li>
 						</ul>
-						
+
 						<form id="form-contact" method="post" action="#">
 							<div class="span6 center"><input type="text" placeholder="Name" name="contact_name" id="contact_name" /></div>
 							<div class="span6 center"><input type="email" placeholder="Email" name="contact_email" id="contact_email" /></div>
@@ -792,15 +118,15 @@
 							<div class="span12 center"><a href="#" id="contact_send" class="btn btn-large btn-icon white"><i class="icon-envelope-alt"></i>Send</a></div>
 						</form>
 					</div>
-						
+
 					<span class="contacts-info span4"><i class="icon-map-marker"></i> 24th Street, New York, USA</span>
 					<span class="contacts-info span4"><i class="icon-phone"></i> 555 123 456 789</span>
 					<span class="contacts-info span4"><i class="icon-envelope-alt"></i> <a href="mailto:{{ site.email }}">{{ site.email }}</a></span>
 				</div>
 			</div>
-			
+
 			{% if site.location.latitude && site.location.longitude %}<div id="map_canvas"></div>{% endif %}
-		</section>	
+		</section>
 	</div>
 
 	<footer id="footer">{% include footer.html %}</footer>
