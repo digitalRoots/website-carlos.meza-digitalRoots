@@ -1,0 +1,20 @@
+
+								<h3>Drop Me a Line</h3>
+
+								<form id = "contact">
+
+									<div id = "about">
+										<input title="Your Name" type="text" name="name" class="input" value="Name*" onblur="if (this.value.length == 0) {this.value='Name*'; this.style='color: #849299';}" onfocus="if (this.value== 'Name*') {this.value=''; this.style='color: black';}">
+										<input title="Your E-Mail" type="text" name="email" class="input" value="E-mail*" onblur="if (this.value.length == 0) {this.value='E-mail*'; this.style='color: #849299';}" onfocus="if (this.value== 'E-mail*') {this.value=''; this.style='color: black';}">
+										<input title="Your WebSite" type="text" name="website" class="input" value="WebSite" onblur="if (this.value.length == 0) {this.value='WebSite'; this.style='color: #849299';}" onfocus="if (this.value== 'WebSite') {this.value=''; this.style='color: black';}">
+									</div>
+
+									<div id = "mess">
+										<textarea title="Your Message" name="message" cols="82" rows="6" class="textarea" onclick="this.value='';"  onfocus="this.style='color: black';">How can I help you?*</textarea>
+									</div>
+
+									<div id = "send">
+										<input title="Send Message" type="submit" name="submit" value="Send Message" class="button">
+									</div>
+
+								</form>
