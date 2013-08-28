@@ -218,7 +218,7 @@
 /*****************************INFO***************************/
 
     div#info {
-        height: 280px;
+        /*height: 280px;*/
         clear: both;
         padding: 50px 50px 0 50px;
     }
@@ -231,15 +231,15 @@
     }
 
     div.personal-info {
-        float: right;
+        /*float: right;
         height: 280px;
-        width: 580px;
+        width: 580px;*/
         background: #343C41;
     }
 
     div.name-position {
         height: 140px;
-        width: 580px;
+        /*width: 580px;*/
         position: relative;
         font-family: 'Patua One';
     }
@@ -250,6 +250,7 @@
         font-size: 48px;
         line-height: 48px;
         padding: 40px 0 0 55px;
+        text-align: center;
     }
 
     div.position {
