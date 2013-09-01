@@ -238,8 +238,8 @@
     }
 
     div.name-position {
-        height: 140px;
-        /*width: 580px;*/
+        /*height: 140px;
+        width: 580px;*/
         position: relative;
         font-family: 'Patua One';
     }
@@ -1760,7 +1760,7 @@
     div.name {
         font-size: 34px;
         line-height: 34px;
-        height: 170px;
+        /*height: 170px;*/
         padding: 30px 0 0 0px;
         text-align: center;
     }
