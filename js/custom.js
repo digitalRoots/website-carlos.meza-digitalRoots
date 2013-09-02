@@ -101,7 +101,7 @@ $(document).ready(function(){
     $tabscontainer.bind('easytabs:after', function() {
         $(".blog-footer").show();
         $(".blog-content").show();
-        $("#blog .content > h2").show();
+        $("#activities .content > h2").show();
         $("#blog-post").hide();
     });
     /* End */
@@ -109,7 +109,7 @@ $(document).ready(function(){
     /*	Google Maps
     /* ---------------------------------------------------------------------- */
     var $map 				= $('#map'),
-        $blog               = $('#blog'),
+        $blog               = $('#activities'),
         $tabContactClass 	= ('contacts'),
         $address 			= $("#contact-address").html();
 
@@ -192,7 +192,7 @@ $(document).ready(function(){
     /* ---------------------------------------------------------------------- */
     /*	Blog
     /* ---------------------------------------------------------------------- */
-    var $blogcontainer = $("#blog > .content-inner");
+    var $blogcontainer = $("#activities > .content-inner");
 
     $blogcontainer.easytabs({
         animate			: true,
@@ -214,7 +214,7 @@ $(document).ready(function(){
     /* This script used only to demonstrate blog page. hide blog content - show blog page */
     $("a.blog-post").click(function(){
         $(".blog-footer").hide();
-        $("#blog .content > h2").hide();
+        $("#activities .content > h2").hide();
         $(".blog-content").slideUp(600);
         $("#blog-post").slideDown(600);
     });
@@ -223,7 +223,7 @@ $(document).ready(function(){
         $(".blog-content").slideDown(600);
         $("#blog-post").slideUp(600);
         $(".blog-footer").show();
-        $("#blog .content > h2").show();
+        $("#activities .content > h2").show();
     });
 
 
