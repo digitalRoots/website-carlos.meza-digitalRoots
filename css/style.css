@@ -661,6 +661,7 @@
         height: 150px;
         background: #2D393F;
         position: relative;
+        text-align: center;
     }
 
     div.image-field div.image a {
