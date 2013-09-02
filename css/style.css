@@ -375,7 +375,7 @@
     }
 
     div#documents div.content,
-    div#portfolio div.content {
+    div#favorites div.content {
         width: 860px;
     }
 
@@ -1282,7 +1282,7 @@
     }
 
     div#documents div.content,
-    div#portfolio div.content {
+    div#favorites div.content {
         width: 788px;
     }
 
@@ -1517,7 +1517,7 @@
     }
 
     div#documents div.content,
-    div#portfolio div.content {
+    div#favorites div.content {
         width: 680px;
     }
 
@@ -1813,7 +1813,7 @@
     }
 
     div#cv div.left-sidebar div.block h2,
-    div#blog div.right-sidebar div.block h2{
+    div#activities div.right-sidebar div.block h2{
         font-size: 30px;
         line-height: 30px;
         padding-bottom: 15px;
@@ -1821,7 +1821,7 @@
 
     div#cv div.left-sidebar,
     div#cv div.content,
-    div#blog div.content {
+    div#activities div.content {
         float: inherit;
         width: 420px;
     }
@@ -1868,7 +1868,7 @@
     }
 
     div#documents div.content,
-    div#portfolio div.content {
+    div#favorites div.content {
         width: 420px;
     }
 
@@ -2181,7 +2181,7 @@
     }
 
     div#cv div.left-sidebar div.block h2,
-    div#blog div.right-sidebar div.block h2{
+    div#activities div.right-sidebar div.block h2{
         font-size: 30px;
         line-height: 30px;
         padding-bottom: 15px;
@@ -2189,7 +2189,7 @@
 
     div#cv div.left-sidebar,
     div#cv div.content,
-    div#blog div.content {
+    div#activities div.content {
         float: inherit;
         width: 280px;
     }
@@ -2248,7 +2248,7 @@
     }
 
     div#documents div.content,
-    div#portfolio div.content {
+    div#favorites div.content {
         width: 280px;
     }
 
