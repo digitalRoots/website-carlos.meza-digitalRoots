@@ -664,6 +664,14 @@
         text-align: center;
     }
 
+    div.image-field div.image .cover {
+    	opacity: .78;
+    }
+
+    div.image-field div.image:hover .cover, div.image-field div.image:focus .cover {
+    	opacity: 1;
+    }
+
     div.image-field div.image a {
         display: none;
         background-image: url(../images/download-small.png);
