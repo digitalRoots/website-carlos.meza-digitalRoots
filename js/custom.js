@@ -27,12 +27,12 @@ $(document).ready(function(){
         return false;
     });
 
-    $portfoliocontainer.find('img').adipoli({
+/*    $portfoliocontainer.find('img').adipoli({
         'startEffect' 	: 'transparent',
         'hoverEffect' 	: 'boxRandom',
         'imageOpacity' 	: 0.5,
         'animSpeed' 	: 100
-    });
+    });*/
 
     $portfoliofilter.find('a').click(function() {
         var currentOption = $(this).attr('data-filter');
