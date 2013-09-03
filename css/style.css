@@ -1419,7 +1419,7 @@
 
     div#info {
         padding: 30px 30px 0;
-        height: 200px;
+        /*height: 200px;*/
     }
 
     div.photo {
@@ -1433,12 +1433,12 @@
     }
 
     div.personal-info {
-        width: 480px;
-        height: 200px;
+        /*width: 480px;
+        height: 200px;*/
     }
 
     div.name-position {
-        width: 480px;
+        /*width: 480px;*/
         height: 120px;
     }
 
